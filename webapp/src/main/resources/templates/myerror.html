@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>后台登录页面</title>
+</head>
+<body>
+  <h1>myerror.html</h1>
+  <h3>无法访问</h3>
+  <form th:action="@{/custom-logout}" method="post">
+      <input type="submit" value="退出">
+  </form>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>后台登录页面</title>
+</head>
+<body>
+  <li th:each="authority:${authorities}" class="tpl-left-nav-item">
+  <a th:href="${authority.url}" th:text="${authority.description}"></a>
+  </li>
+ <h3>那些地方阿飞啊放大<h3>
+     <form th:action="@{/custom-logout}" method="post">
+         <input type="submit" value="退出">
+     </form>
+</body>
+</html>
